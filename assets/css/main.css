@@ -1801,3 +1801,28 @@ section,
     font-size: 20px;
   }
 }
+
+.design-process .design-icon:hover i {
+  background: color-mix(in srgb, var(--accent-color), transparent 35%);
+  color: var(--default-color);
+}
+
+#discover .discover-section:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 35%);
+  -webkit-text-fill-color: var(--default-color);
+}
+
+#define .define-section:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 35%);
+  -webkit-text-fill-color: var(--default-color);
+}
+
+#develop .develop-section:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 35%);
+  -webkit-text-fill-color: var(--default-color);
+}
+
+#deliver .deliver-section:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 35%);
+  -webkit-text-fill-color: var(--default-color);
+}
