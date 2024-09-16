@@ -28,6 +28,14 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <script>
+    window.onload = function () {
+      var iframe = document.getElementById("myiframe");
+      iframe.width = iframe.contentWindow.document.body.scrollWidth;
+      iframe.height = iframe.contentWindow.document.body.scrollHeight;
+    }
+  </script>
 </head>
 
 <body class="portfolio-details-page">
@@ -72,7 +80,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>ProDash</h2>
-            <p>A Centralised Project
+            <p>A Centralised Project<br>
               Management Application</p>
             <br><br>
             <a href="#portfolio-details"><span class="typed" data-typed-items="View details &#x25BC;"></span><span
@@ -196,8 +204,7 @@
                 productivity.
               </p>
               <br>
-              <a href="https://www.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?node-id=590-21483&node-type=canvas&viewport=5739%2C-8128%2C0.75&t=slw37DDJENf9EjhV-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=590%3A31120&show-proto-sidebar=1"
-                class="btn-view align-self-start">View Prototype</a>
+              <a href="#prototype" class="btn-view align-self-start">View Prototype</a>
 
               <br><br>
               <div id="design-process" class="design-process">
@@ -833,7 +840,7 @@
 
               <div class="section-content">
 
-                <section id="portfolio" class="portfolio section p-1">
+                <section id="sketches" class="portfolio section p-1">
                   <h6><b>Sketches</b></h6>
 
                   <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
@@ -886,7 +893,7 @@
                   </div>
                 </section>
 
-                <section id="portfolio" class="portfolio section p-1 mt-4">
+                <section id="mid-fi-wireframes" class="portfolio section p-1 mt-4">
 
                   <h6><b>Wireframes</b></h6>
 
@@ -905,7 +912,7 @@
                           <div class="portfolio-info">
                             <!-- <h4>ProDash</h4> -->
                             <p>Login / Tasks / Calendar Screen Sketeches</p>
-                            <a href="assets/img/mid-fi-wireframes.png" title="Login / Tasks / Calendar Screen Sketeches"
+                            <a href="assets/img/mid-fi-wireframes.png" title="Login / Tasks / Calendar Screen Sketches"
                               data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
                                 class="bi bi-zoom-in"></i></a>
                           </div>
@@ -914,6 +921,16 @@
 
                     </div><!-- End Portfolio Container -->
                   </div>
+
+                  <section class="d-flex align-items-center p-0" style="height: 100vh;">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                      src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=0%3A1&node-id=219-4129&node-type=canvas&viewport=-2159%2C9%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=219%3A4129&show-proto-sidebar=0&embed-host=share"
+                      allowfullscreen></iframe>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                      src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=0%3A1&node-id=307-45734&node-type=canvas&viewport=-2159%2C9%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=307%3A45734&show-proto-sidebar=0&embed-host=share"
+                      allowfullscreen></iframe>
+                  </section>
+
                 </section>
 
                 <div class="section-content" data-aos="fade" data-aos-delay="100">
@@ -1047,7 +1064,7 @@
                   </div>
                 </div>
 
-                <section id="portfolio" class="portfolio section p-1">
+                <section id="design-matrix" class="portfolio section p-1">
 
                   <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
@@ -1077,7 +1094,7 @@
                 <div class="section-content" data-aos="fade" data-aos-delay="100">
                   <h6><b>Brand Development</b></h6>
 
-                  <section id="portfolio" class="portfolio section p-1">
+                  <section id="brand-development" class="portfolio section p-1">
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                       data-sort="original-order">
@@ -1126,7 +1143,7 @@
                 <div class="section-content" data-aos="fade" data-aos-delay="100">
                   <h6><b>UI Library</b></h6>
 
-                  <section id="portfolio" class="portfolio section p-1">
+                  <section id="ui-library" class="portfolio section p-1">
                     <div class="w-100 text-center" style="border-bottom: 2px solid var(--accent-color);">
                       <span><b>Atoms & Molecules</b></span>
                     </div>
@@ -1193,7 +1210,7 @@
                 <div class="section-content" data-aos="fade" data-aos-delay="100">
                   <h6><b>Wireframes</b></h6>
 
-                  <section id="portfolio" class="portfolio section p-1">
+                  <section id="hi-fi-wireframes" class="portfolio section p-1">
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                       data-sort="original-order">
@@ -1219,13 +1236,22 @@
 
                       </div><!-- End Portfolio Container -->
                     </div>
+
+                    <section class="d-flex align-items-center p-0" style="height: 100vh;">
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                        src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=590%3A21483&node-id=590-30909&node-type=frame&viewport=2541%2C-8263%2C0.62&scaling=scale-down&content-scaling=fixed&starting-point-node-id=590%3A30909&show-proto-sidebar=0&embed-host=share"
+                        allowfullscreen></iframe>
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                        src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=590%3A21483&node-id=590-31120&node-type=frame&viewport=2541%2C-8263%2C0.62&scaling=scale-down&content-scaling=fixed&starting-point-node-id=590%3A31120&show-proto-sidebar=0&embed-host=share"
+                        allowfullscreen></iframe>
+                    </section>
                   </section>
                 </div>
 
                 <div class="section-content" data-aos="fade" data-aos-delay="100">
                   <h6><b>Product Marketing Website</b></h6>
 
-                  <section id="portfolio" class="portfolio section p-1">
+                  <section id="marketing-site" class="portfolio section p-1">
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                       data-sort="original-order">
@@ -1248,13 +1274,23 @@
 
                       </div><!-- End Portfolio Container -->
                     </div>
+
+                    <section class="d-flex align-items-center p-0" style="height: 100vh;">
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                        src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=804%3A28199&node-id=990-15335&node-type=frame&viewport=376%2C288%2C0.02&scaling=contain&content-scaling=fixed&starting-point-node-id=990%3A15335&show-proto-sidebar=0&embed-host=share"
+                        allowfullscreen></iframe>
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                        src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=1673%3A18197&node-id=1673-22200&node-type=canvas&viewport=-7957%2C-2326%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1673%3A22200&show-proto-sidebar=0&embed-host=share"
+                        allowfullscreen></iframe>
+                    </section>
+
                   </section>
                 </div>
 
                 <div class="section-content" data-aos="fade" data-aos-delay="100">
                   <h6><b>Multi-Platform Product</b></h6>
 
-                  <section id="portfolio" class="portfolio section p-1">
+                  <section id="multi-platform-product" class="portfolio section p-1">
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                       data-sort="original-order">
@@ -1323,6 +1359,21 @@
                 </div>
 
               </div>
+
+              <a href="#design-process">
+                <div id="prototype" class="prototype-section">
+                  <h2>Prototype</h2>
+                </div>
+              </a>
+
+
+              <section class="d-flex flex-column align-items-center p-2" style="height: 100vh;">
+                <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%"
+                  src="https://embed.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?page-id=590%3A21483&node-id=590-31120&node-type=frame&viewport=2541%2C-8263%2C0.62&scaling=scale-down&content-scaling=fixed&starting-point-node-id=590%3A31120&show-proto-sidebar=0&embed-host=share&"
+                  allowfullscreen></iframe>
+              </section>
+
+
 
             </div>
 
