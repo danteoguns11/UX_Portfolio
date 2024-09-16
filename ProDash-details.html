@@ -9,8 +9,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -38,12 +38,12 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li> -->
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
 
@@ -196,10 +196,11 @@
                 productivity.
               </p>
               <br>
-              <a href="#" class="btn-view align-self-start">View Prototype</a>
+              <a href="https://www.figma.com/proto/ppvgT5uX0ODtiCW4xmvxqk/Capstone-Project?node-id=590-21483&node-type=canvas&viewport=5739%2C-8128%2C0.75&t=slw37DDJENf9EjhV-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=590%3A31120&show-proto-sidebar=1"
+                class="btn-view align-self-start">View Prototype</a>
 
               <br><br>
-              <div class="design-process">
+              <div id="design-process" class="design-process">
                 <h2>Design Process</h2>
                 <div class="process" data-aos="fade-up" data-aos-delay="100">
 
@@ -208,7 +209,9 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                       <a href="#discover"><i class="discover bi bi-search"></i></a>
                       <div class="d-flex flex-column align-items-center process-item">
-                        <h3>Discover</h3>
+                        <a href="#discover">
+                          <h3>Discover</h3>
+                        </a>
                         <ul>
                           <li>Research</li>
                           <li>Interview &amp; <br> Affinity Map</li>
@@ -220,7 +223,9 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                       <a href="#define"><i class="define bi bi-crosshair"></i></a>
                       <div class="d-flex flex-column align-items-center process-item">
-                        <h3>Define</h3>
+                        <a href="#define">
+                          <h3>Define</h3>
+                        </a>
                         <ul>
                           <li>Persona</li>
                           <li>Epics &amp; User Stories</li>
@@ -233,7 +238,9 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                       <a href="#develop"><i class="develop bi bi-lightbulb"></i></a>
                       <div class="d-flex flex-column align-items-center process-item">
-                        <h3>Develop</h3>
+                        <a href="#develop">
+                          <h3>Develop</h3>
+                        </a>
                         <ul>
                           <li>Sketches</li>
                           <li>Wireframes</li>
@@ -246,9 +253,11 @@
                     <!-- End Process Item -->
 
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                      <i class="deliver bi bi-send-check"></i>
+                      <a href="#deliver"><i class="deliver bi bi-send-check"></i></a>
                       <div class="d-flex flex-column align-items-center process-item">
-                        <h3>Deliver</h3>
+                        <a href="#deliver">
+                          <h3>Deliver</h3>
+                        </a>
                         <ul>
                           <li>Hi-Fidelity</li>
                           <li>Marketing Website</li>
@@ -262,9 +271,11 @@
                 </div>
               </div>
 
-              <div id="discover" class="discover-section">
-                <h2>Discover</h2>
-              </div>
+              <a href="#design-process">
+                <div id="discover" class="discover-section">
+                  <h2>Discover</h2>
+                </div>
+              </a>
 
               <div class="section-content">
 
@@ -647,9 +658,11 @@
                 </div>
               </div>
 
-              <div id="define" class="define-section">
-                <h2>Define</h2>
-              </div>
+              <a href="#design-process">
+                <div id="define" class="define-section">
+                  <h2>Define</h2>
+                </div>
+              </a>
 
               <div class="section-content">
 
@@ -811,9 +824,12 @@
                 </div>
               </div>
 
-              <div id="develop" class="develop-section">
-                <h2>Develop</h2>
-              </div>
+
+              <a href="#design-process">
+                <div id="develop" class="develop-section">
+                  <h2>Develop</h2>
+                </div>
+              </a>
 
               <div class="section-content">
 
@@ -1166,9 +1182,11 @@
 
               </div>
 
-              <div id="deliver" class="deliver-section">
-                <h2>Deliver</h2>
-              </div>
+              <a href="#design-process">
+                <div id="deliver" class="deliver-section">
+                  <h2>Deliver</h2>
+                </div>
+              </a>
 
               <div class="section-content">
 
@@ -1330,10 +1348,10 @@
       <h3 class="sitename">Daniel Ogunsanya</h3>
       <p>UX/UI Designer</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-behance"></i></a>
-        <a href="#"><i class="bi bi-dribbble"></i></a>
-        <a href="#"><i class="bi bi-envelope-at"></i></a>
+        <a href="https://www.linkedin.com/in/daniel-ogunsanya/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.behance.net/danielogunsanya"><i class="bi bi-behance"></i></a>
+        <a href="https://dribbble.com/danteoguns11"><i class="bi bi-dribbble"></i></a>
+        <a href="mailto:danteoguns@gmail.com"><i class="bi bi-envelope-at"></i></a>
       </div>
       <!-- <div class="container">
             <div class="copyright">
