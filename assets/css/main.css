@@ -1681,6 +1681,7 @@ section,
   padding: 24px 0px 24px 0px !important;
   width: 100%;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .criteria {
