@@ -47,8 +47,8 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="index.html"><i class="bi bi-house-fill navicon"></i><span>Home</span></a></li>
+        <li><a href="#design-process"><i class="bi bi-x-diamond navicon"></i><span>Design Process</span></a></li>
         <li><a href="#discover"><i class="bi bi-search navicon"></i><span>Discover</span></a></li>
-        <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li> -->
         <li><a href="#define"><i class="bi bi-crosshair navicon"></i><span>Define</span></a></li>
         <li><a href="#develop"><i class="bi bi-lightbulb navicon"></i><span>Develop</span></a></li>
         <li><a href="#deliver"><i class="bi bi-send-check navicon"></i><span>Deliver</span></a></li>
@@ -223,8 +223,8 @@
                       </a>
                       <div class="d-flex justify-content-center process-item">
                         <ul>
-                          <li>Research</li>
-                          <li>Interview &amp; Affinity Mapping</li>
+                          <li><a href="#research-section">Research</a></li>
+                          <li><a href="#interview-section">Interview &amp; Affinity Mapping</a></li>
                         </ul>
                       </div>
                     </div>
@@ -236,9 +236,9 @@
                       </a>
                       <div class="d-flex justify-content-center process-item">
                         <ul>
-                          <li>Persona</li>
-                          <li>Epics &amp; User Stories</li>
-                          <li>Task Flows</li>
+                          <li><a href="#persona-section">Persona</a></li>
+                          <li><a href="#epics-section">Epics &amp; User Stories</a></li>
+                          <li><a href="#taskflows-section">Task Flows</a></li>
                         </ul>
                       </div>
                     </div>
@@ -250,11 +250,11 @@
                       </a>
                       <div class="d-flex justify-content-center process-item">
                         <ul>
-                          <li>Sketches</li>
-                          <li>Wireframes</li>
-                          <li>User Testing</li>
-                          <li>Brand Development</li>
-                          <li>UI Library</li>
+                          <li><a href="#develop-sketches">Sketches</a></li>
+                          <li><a href="#develop-wireframes">Wireframes</a></li>
+                          <li><a href="#develop-testing">User Testing</a></li>
+                          <li><a href="#develop-brand">Brand Development</a></li>
+                          <li><a href="#develop-library">UI Library</a></li>
                         </ul>
                       </div>
                     </div>
@@ -266,9 +266,9 @@
                       </a>
                       <div class="d-flex justify-content-center process-item">
                         <ul>
-                          <li>Hi-Fidelity</li>
-                          <li>Marketing Website</li>
-                          <li>Multi Platform</li>
+                          <li><a href="#deliver-wireframes">Hi-Fidelity</a></li>
+                          <li><a href="#deliver-marketing">Marketing Website</a></li>
+                          <li><a href="#deliver-multi">Multi Platform</a></li>
                         </ul>
                       </div>
                     </div>
@@ -501,7 +501,7 @@
                     </div>
                   </div>
 
-                  <div class="my-5">
+                  <div id="interview-section" class="my-5">
                     <h4><b>Interview &
                         Affinity Mapping</b></h4>
                     <h6><b>Participant Criteria:</b></h6>
@@ -772,7 +772,7 @@
 
                   <br>
 
-                  <h6><b>Persona</b></h6>
+                  <h6 id="persona-section"><b>Persona</b></h6>
                   <div class="">
                     <img src="assets/img/ux-persona.png" alt="" class="w-100">
                   </div>
@@ -784,7 +784,7 @@
 
                   <br>
 
-                  <h6><b>Epics & User Stories</b></h6>
+                  <h6 id="epics-section"><b>Epics & User Stories</b></h6>
                   <p><span>From synthesising the interview findings and affinity mapping, I was able to identify three
                       potential design solutions to the problem space with the following epics:</span></p>
 
@@ -866,48 +866,71 @@
 
                   <br>
 
-                  <h6><b>Task Flows</b></h6>
-                  <div class="section-content pt-0">
-                    <p><b>Dashboard Setup: </b><span>The user can login and be directed to the dashboard screen. If
-                        they’re
-                        a new user, they will either need to register as
-                        a fresh user and follow the set-up process or use their invite code to join an existing team,
-                        which will automatically
-                        set-up the dashboard.</span></p>
+                  <h6 id="taskflows-section"><b>Task Flows</b></h6>
 
-                    <div class="">
-                      <img src="assets/img/main-taskflow.png" alt="" class="w-100">
-                    </div>
+                  <div class="row gy-4">
+
+                    <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
+                      <div class="research-item position-relative text-lg-start text-md-center">
+                        <p><b>Dashboard Setup: </b><span>The user can login and be directed to the dashboard screen. If
+                            they’re
+                            a new user, they will either need to register as
+                            a fresh user and follow the set-up process or use their invite code to join an existing
+                            team,
+                            which will automatically
+                            set-up the dashboard.</span></p>
+
+                        <div class="">
+                          <img src="assets/img/main-taskflow.png" alt="" class="w-100">
+                        </div>
+                      </div>
+                    </div><!-- End Research Item -->
+
                   </div>
 
                   <br><br>
 
-                  <div class="section-content pt-0">
-                    <p><b>View Project: </b><span>From the centralised dashboard, users can enter specific projects to
-                        assign and monitor tasks, view project’s documents
-                        and Kanban/Scrum Board. The user is prompted to create a project if no project is found upon
-                        entering the main Dashboard
-                        or when the user selects ‘View All Projects’.</span></p>
+                  <div class="row gy-4">
 
-                    <div class="">
-                      <img src="assets/img/sub-taskflow.png" alt="" class="w-100">
-                    </div>
+                    <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
+                      <div class="research-item position-relative text-lg-start text-md-center">
+                        <p><b>View Project: </b><span>From the centralised dashboard, users can enter specific projects
+                            to
+                            assign and monitor tasks, view project’s documents
+                            and Kanban/Scrum Board. The user is prompted to create a project if no project is found upon
+                            entering the main Dashboard
+                            or when the user selects ‘View All Projects’.</span></p>
+
+                        <div class="">
+                          <img src="assets/img/sub-taskflow.png" alt="" class="w-100">
+                        </div>
+                      </div>
+                    </div><!-- End Research Item -->
+
                   </div>
 
                   <br><br>
 
-                  <div class="section-content pt-0">
-                    <p><b>Update Task Details & Communication: </b><span>When viewing a task, the user is able to make
-                        changes to the task’s details such as status, deadlines, dependencies,
-                        documents, and more. Within the Communication Tab, the user is able to input any important
-                        information from meetings or
-                        view previous messages regarding issues etc. Upon saving the changes, the system collates all
-                        changes into a summarised
-                        message which is broadcasted to assigned team members.</span></p>
+                  <div class="row gy-4">
 
-                    <div class="">
-                      <img src="assets/img/sub-taskflow2.png" alt="" class="w-100">
-                    </div>
+                    <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
+                      <div class="research-item position-relative text-lg-start text-md-center">
+                        <p><b>Update Task Details & Communication: </b><span>When viewing a task, the user is able to
+                            make
+                            changes to the task’s details such as status, deadlines, dependencies,
+                            documents, and more. Within the Communication Tab, the user is able to input any important
+                            information from meetings or
+                            view previous messages regarding issues etc. Upon saving the changes, the system collates
+                            all
+                            changes into a summarised
+                            message which is broadcasted to assigned team members.</span></p>
+
+                        <div class="">
+                          <img src="assets/img/sub-taskflow2.png" alt="" class="w-100">
+                        </div>
+                      </div>
+                    </div><!-- End Research Item -->
+
                   </div>
 
                 </div>
@@ -923,7 +946,7 @@
                 <div class="section-content">
 
                   <section id="sketches" class="portfolio section p-1">
-                    <h6><b>Sketches</b></h6>
+                    <h6 id="develop-sketches"><b>Sketches</b></h6>
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                       data-sort="original-order">
@@ -978,7 +1001,7 @@
 
                   <section id="mid-fi-wireframes" class="portfolio section p-1 mt-4">
 
-                    <h6><b>Wireframes</b></h6>
+                    <h6 id="develop-wireframes"><b>Wireframes</b></h6>
 
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
@@ -1014,10 +1037,10 @@
                   </section>
 
                   <section data-aos="fade" data-aos-delay="100">
-                    <h6><b>User Testing</b></h6>
+                    <h6 id="develop-testing"><b>User Testing</b></h6>
                     <br>
 
-                    <div id="user-testing" class="row gy-4">
+                    <div class="row gy-4">
 
                       <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="research-item position-relative">
@@ -1214,8 +1237,10 @@
                     </div>
                   </section>
 
+                  <br>
+
                   <div data-aos="fade" data-aos-delay="100">
-                    <h6><b>Brand Development</b></h6>
+                    <h6 id="develop-brand"><b>Brand Development</b></h6>
 
                     <section id="brand-development" class="portfolio section p-1">
 
@@ -1263,8 +1288,10 @@
                     </section>
                   </div>
 
+                  <br>
+
                   <div data-aos="fade" data-aos-delay="100">
-                    <h6><b>UI Library</b></h6>
+                    <h6 id="develop-library"><b>UI Library</b></h6>
 
                     <section id="ui-library" class="portfolio section p-1">
                       <div class="w-100 text-center" style="border-bottom: 2px solid var(--accent-color);">
@@ -1333,7 +1360,7 @@
                 <div class="section-content">
 
                   <div data-aos="fade" data-aos-delay="100">
-                    <h6><b>Wireframes</b></h6>
+                    <h6 id="deliver-wireframes"><b>Wireframes</b></h6>
 
                     <section id="hi-fi-wireframes" class="portfolio section p-1">
 
@@ -1371,7 +1398,7 @@
                   </div>
 
                   <div data-aos="fade" data-aos-delay="100">
-                    <h6><b>Product Marketing Website</b></h6>
+                    <h6 id="deliver-marketing"><b>Product Marketing Website</b></h6>
 
                     <section id="marketing-site" class="portfolio section p-1">
 
@@ -1414,7 +1441,7 @@
                   </div>
 
                   <div data-aos="fade" data-aos-delay="100">
-                    <h6><b>Multi-Platform Product</b></h6>
+                    <h6 id="deliver-multi"><b>Multi-Platform Product</b></h6>
 
                     <section id="multi-platform-product" class="portfolio section p-1">
 
