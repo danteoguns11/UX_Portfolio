@@ -1881,3 +1881,45 @@ a.design-icon {
     width: 100%;
   }
 }
+
+.secondary_research-item {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 24px 24px;
+  transition: 0.3s;
+  border-radius: 12px;
+  line-height: 2;
+}
+
+.research-secondary {
+  text-align: center;
+}
+
+
+.research-secondary .research-icon {
+  color: var(--contrast-color);
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-icon.developmental {
+  background: #FEC107;
+}
+
+.research-icon.cognitive {
+  background: #006FE3;
+}
+
+.research-icon.balance {
+  background: #00A843;
+}
+
+.research-icon.consideration {
+  background: #E96F14;
+}
