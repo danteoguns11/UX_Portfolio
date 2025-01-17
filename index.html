@@ -509,11 +509,13 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="required"
+                    data-error="Your name is required.">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="required"
+                    data-error="Your email is required.">
                 </div>
 
                 <div class="col-md-12">
@@ -521,7 +523,8 @@
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required="required"
+                    data-error="The message is required."></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
