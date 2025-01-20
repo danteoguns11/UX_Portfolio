@@ -1,52 +1,37 @@
 <?php
+
 class PHP_Email_Form {
-    public $to;
-    public $from_name;
-    public $from_email;
-    public $subject;
-    public $ajax;
-    private $messages = array();
-    public $smtp = array();
+  public $ajax = false;
+  public $to = '';
+  public $from_name = '';
+  public $from_email = '';
+  public $subject = '';
+  public $smtp = array();
+  private $messages = array();
 
-    public function add_message($message, $label, $priority = 0) {
-        $this->messages[] = array(
-            'message' => $message,
-            'label' => $label,
-            'priority' => $priority
-        );
+  public function add_message($content, $label = '', $length = 0) {
+    $this->messages[] = array('content' => $content, 'label' => $label, 'length' => $length);
+  }
+
+  public function send() {
+    if (empty($this->to) || empty($this->from_email)) {
+      return false;
     }
 
-    public function send() {
-        $message_body = "";
-
-        usort($this->messages, function($a, $b) {
-            return $a['priority'] <=> $b['priority'];
-        });
-
-        foreach ($this->messages as $message) {
-            $message_body .= $message['label'] . ": " . $message['message'] . "\n";
-        }
-
-        $headers = "From: " . $this->from_name . " <" . $this->from_email . ">\r\n" .
-                   "Reply-To: " . $this->from_email . "\r\n" .
-                   "Content-Type: text/plain; charset=UTF-8\r\n";
-
-        if (!empty($this->smtp)) {
-            // Configure and use SMTP if set
-            ini_set("SMTP", $this->smtp['host']);
-            ini_set("smtp_port", $this->smtp['port']);
-            ini_set("sendmail_from", $this->smtp['username']);
-            ini_set("auth_username", $this->smtp['username']);
-            ini_set("auth_password", $this->smtp['password']);
-        }
-
-        $success = mail($this->to, $this->subject, $message_body, $headers);
-
-        if ($success) {
-            return "Your message has been sent successfully.";
-        } else {
-            return "There was an error sending your message.";
-        }
+    $email_content = "";
+    foreach ($this->messages as $message) {
+      $email_content .= $message['label'] . ": " . $message['content'] . "\n";
     }
+
+    $headers = "From: " . $this->from_name . " <" . $this->from_email . ">\r\n";
+    $headers .= "Reply-To: " . $this->from_email . "\r\n";
+
+    if ($this->ajax) {
+      return mail($this->to, $this->subject, $email_content, $headers);
+    } else {
+      return mail($this->to, $this->subject, $email_content, $headers);
+    }
+  }
 }
+
 ?>
