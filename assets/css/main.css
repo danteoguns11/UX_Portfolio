@@ -231,12 +231,14 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-.navmenu {
+.navmenu,
+.navmenu2 {
   padding: 0;
   z-index: 9997;
 }
 
-.navmenu ul {
+.navmenu ul,
+.navmenu2 ul {
   list-style: none;
   padding: 0 0 20px 0;
   margin: 0;
@@ -244,8 +246,9 @@ h6 {
 }
 
 .navmenu a,
-.navmenu a:focus {
-  color: var(--nav-color);
+.navmenu2 a,
+.navmenu a:focus,
+.navmenu2 a:focus {
   font-family: var(--nav-font);
   display: flex;
   align-items: center;
@@ -253,52 +256,77 @@ h6 {
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
   height: 56px;
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
 }
 
+.navmenu a {
+  color: var(--nav-color);
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.navmenu2 a {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
 .navmenu a i,
-.navmenu a:focus i {
+.navmenu2 a i,
+.navmenu a:focus i,
+.navmenu2 a:focus i {
   font-size: 20px;
 }
 
 .navmenu a span,
-.navmenu a:focus span {
+.navmenu2 a span,
+.navmenu a:focus span,
+.navmenu2 a:focus span {
   padding: 0 5px 0 7px;
 }
 
 @media (min-width: 992px) {
 
   .navmenu a,
-  .navmenu a:focus {
+  .navmenu2 a,
+  .navmenu a:focus,
+  .navmenu2 a:focus {
     max-width: 56px;
   }
 
   .navmenu a span,
-  .navmenu a:focus span {
+  .navmenu2 a span,
+  .navmenu a:focus span,
+  .navmenu2 a:focus span {
     display: none;
   }
 }
 
 .navmenu a:hover,
+.navmenu2 a:hover,
 .navmenu .active,
+.navmenu2 .active,
 .navmenu .active:focus,
-.navmenu li:hover>a {
+.navmenu2 .active:focus,
+.navmenu li:hover>a,
+.navmenu2 li:hover>a {
   color: var(--contrast-color);
   background: var(--nav-hover-color);
 }
 
 .navmenu a:hover,
-.navmenu li:hover>a {
+.navmenu2 a:hover,
+.navmenu li:hover>a,
+.navmenu2 li:hover>a {
   max-width: 100%;
   color: var(--contrast-color);
 }
 
 .navmenu a:hover span,
-.navmenu li:hover>a span {
+.navmenu2 a:hover span,
+.navmenu li:hover>a span,
+.navmenu2 li:hover>a span {
   display: block;
 }
 
