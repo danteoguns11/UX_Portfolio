@@ -1474,6 +1474,17 @@ section,
   padding: 0;
 }
 
+.swiper-slide img {
+  height: 75vh;
+  width: auto;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
